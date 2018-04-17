@@ -18,10 +18,11 @@ public class Talk
         System.out.println("agent: " + ticket.getAgentId() + ", customer: " + ticket.getCustomerId() + ", talk status: " + ticket.getStatus());
     }
 
-    public void send(String sender, String msg)
+    public void send(String sender, String msg, String msgType)
     {
         ticket.setMessage(msg);
-        System.out.println("sender: " + sender + ", msg: " + ticket.getMessage());
+        ticket.setMessageType(msgType);
+        System.out.println("sender: " + sender + ", msg: " + ticket.getMessage() + ", msgType: " + msgType);
     }
 
     public void disconnect()

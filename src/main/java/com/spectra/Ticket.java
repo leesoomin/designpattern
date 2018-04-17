@@ -8,6 +8,7 @@ public class Ticket
     private String customerId;
     private String agentId;
     private String message;
+    private String messageType;
     private String status;
 
     public Ticket(Agent agent, Customer customer, String status)
@@ -56,6 +57,16 @@ public class Ticket
     public void setMessage(String message)
     {
         this.message = message;
+    }
+
+    public String getMessageType()
+    {
+        return messageType;
+    }
+
+    public void setMessageType(String messageType)
+    {
+        this.messageType = messageType;
     }
 
     public String getStatus()
