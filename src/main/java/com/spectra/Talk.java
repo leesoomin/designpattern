@@ -20,9 +20,8 @@ public class Talk
 
     public void send(String sender, String msg, String msgType)
     {
-        ticket.setMessage(msg);
-        ticket.setMessageType(msgType);
-        System.out.println("sender: " + sender + ", msg: " + ticket.getMessage() + ", msgType: " + msgType);
+        Message message = new Message(msg, msgType);
+        System.out.println("sender: " + sender + ", msg: " + message.getContents() + ", msgType: " + message.getType());
     }
 
     public void disconnect()
