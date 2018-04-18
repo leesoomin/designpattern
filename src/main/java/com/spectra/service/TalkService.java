@@ -24,6 +24,7 @@ public class TalkService
         
         String msg = talkMessage.getMessage(message.getContents());
         ticket.setMessage(msg);
+        System.out.println("sender: " + sender + ", " + ticket.getMessage());
     }
 
     public void disconnect(Ticket ticket)
