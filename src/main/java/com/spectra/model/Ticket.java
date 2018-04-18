@@ -1,4 +1,4 @@
-package com.spectra;
+package com.spectra.model;
 
 import java.util.UUID;
 
@@ -11,11 +11,11 @@ public class Ticket
     private String messageType;
     private String status;
 
-    public Ticket(Agent agent, Customer customer, String status)
+    public Ticket(String agentId, String customerId, String status)
     {
-        this.agentId = agent.getAgentId();
-        this.customerId = customer.getCustomerId();
         this.ticketId = UUID.randomUUID().toString();
+        this.agentId = agentId;
+        this.customerId = customerId;
         this.status = status;
     }
 

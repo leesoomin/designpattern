@@ -1,4 +1,4 @@
-package com.spectra;
+package com.spectra.model;
 
 public class Message
 {
